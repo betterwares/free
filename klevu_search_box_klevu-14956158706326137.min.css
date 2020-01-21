@@ -1,0 +1,55 @@
+.klevu-clear-left{clear:left}.klevu-clear-both{clear:both}.klevu-pt-rs-hover{position:absolute;z-index:20000000000;width:330px;font-family:inherit;font-size:13px;background-color:#fff;border-radius:3px;color:#585858;border:1px solid #ddd;-webkit-box-shadow:0 3px 5px rgba(50,50,50,0.25);-moz-box-shadow:0 3px 5px rgba(50,50,50,0.25);box-shadow:0 3px 5px rgba(50,50,50,0.25)}
+.klevu-fluid .klevu-pt-rs-hover{width:24%}.klevu-pt-rs-hover strong{color:#565656;display:inline-block;padding:0 4px;font-size:14px;margin-right:12px;font-weight:normal;padding-left:8px;margin-top:8px;margin-bottom:5px}
+.klevu-pt-rs-hover .klevu-pt-rs-keywords{color:#666;text-align:left;border-bottom:1px solid #ddd;padding-bottom:10px}
+.klevu-pt-rs-hover .klevu-pt-rs-keywords a{display:block;padding:6px 10px 6px 20px;line-height:14px;color:#585858;text-decoration:none}
+.klevu-pt-rs-hover a:hover{text-decoration:underline;background:0}.klevu-searching-area-l2{position:absolute;z-index:20000000000;width:380px;font-family:inherit;font-size:14px;background-color:#fff;border-radius:3px;color:#565656;border:1px solid #ddd;-webkit-box-shadow:0 3px 5px rgba(50,50,50,0.25);-moz-box-shadow:0 3px 5px rgba(50,50,50,0.25);box-shadow:0 3px 5px rgba(50,50,50,0.25)}
+.klevu-fluid .klevu-searching-area-l2{width:28%}.klevu-searching-area-l2 .klevuLoader img{display:inline-block;width:22px !important}
+.klevuSuggestionHeading{overflow:visible;padding-left:8px;margin-top:8px;margin-bottom:0;text-align:left;min-height:12px}
+.klevuSuggestionHeading span.klevuLoader{float:right}.klevu-searching-area-l2 span.klevuLoader img{width:22px !important;margin-right:10px}
+.klevuSuggestionHeading .klevuHeadingText{color:#565656;padding:0 4px;font-size:14px;margin-right:12px;font-weight:bold}
+#klevuProductHeading .klevuHeadingText{display:none !important}.klevuSuggestionHeading a{float:right;margin-right:10px;color:#565656;font-weight:bold;text-decoration:none;display:block;width:100%;text-align:right}
+.klevuSuggestionHeading a:hover{text-decoration:underline !important;color:#55a440}.klevuAutoSuggestion-l2{border-bottom:1px solid #ddd;padding-bottom:10px}
+.klevuAutoSuggestion-l2 ul{margin:0;padding:0;text-align:left}.klevuAutoSuggestion-l2 ul li{margin:0;display:block;list-style:none;margin:0;cursor:default;text-align:left}
+.klevuAutoSuggestion-l2 ul li a{display:block;padding:4px 10px 4px 20px;line-height:14px;color:#585858;text-decoration:none;font-size:13px}
+.klevuAutoSuggestion-l2 ul li:hover{text-decoration:underline}.klevuAutoSuggestion-l2 ul li.klevu-hovered{background-color:#f5f5f5}
+.klevuAutoSuggestion-l2 ul li.klevu-ac-inCat{padding-left:10px}.klevuAutoSuggestion-l2 ul li ul li a{padding-left:35px}
+.klevuAutoSuggestion-l2 ul li strong{color:#2980b9}.klevuSearchResults-l2 ul{margin:0;padding-left:0;text-align:left}
+.klevuSearchResults-l2 ul li{display:block;width:100%;height:auto;text-align:left;position:relative;border-bottom:1px solid #efefef}
+.klevuSearchResults-l2 ul li a.klevu-result-box-l2{text-decoration:none;color:#585858;outline:0;display:block;padding:8px 7px;height:auto;line-height:18px}
+.klevuSearchResults-l2 .klevu-img-wrap-l2{float:left;overflow:hidden;width:20% !important;height:55px !important;text-align:center;display:none !important}
+.klevuSearchResults-l2 img{max-width:100% !important;max-height:50px !important;width:auto;height:auto;border:0;outline:0;margin-top:5px;display:inline-block}
+.klevuSearchResults-l2 .klevu-discount-badge-l2{background:#ffcc01;padding:0 5px;color:#585858;font-size:9px;position:absolute;top:6px;left:4px}
+.klevuSearchResults-l2 .klevu-discount-badge-l2 strong{color:#585858}.klevuSearchResults-l2 ul li .klevu-name-desc-l2{float:none;width:100%;padding-left:10px;box-sizing:border-box}
+.klevuSearchResults-l2 ul li .klevu-name-l2{font-size:12px;text-decoration:none;color:#55a440;word-wrap:break-word;font-style:normal;font-weight:bold;text-transform:uppercase}
+.klevuSearchResults-l2 ul li .klevu-desc-l2{color:#585858;font-size:13px;margin-top:5px}.klevuSearchResults-l2 .klevu-stars-small-l2{height:13px;display:none;vertical-align:bottom;background:transparent url(https://js.klevu.com/klevu-js-v1/img-1-1/star-gray.png) top left repeat-x;width:65px;margin-top:5px}
+.klevuSearchResults-l2 .klevu-stars-small-l2 .klevu-rating-l2{background:transparent url(https://js.klevu.com/klevu-js-v1/img-1-1/star-yellow.png) top left repeat-x;height:13px}
+.klevuSearchResults-l2 ul li .klevu-saleprice-l2{font-weight:bold;font-size:13px;margin-bottom:5px;color:#585858}
+.klevuSearchResults-l2 ul li .klevu-origprice-l2{margin-left:5px;font-size:12px;text-decoration:line-through;color:#777}
+ul li span.klevuPriceGreyText-l2{font-weight:normal;font-size:11px !important;margin-bottom:5px;color:#393939 !important}
+.klevuSearchResults-l2 ul li .klevu-variants-l2{font-size:9px;text-align:left;color:#777}.klevuSearchResults-l2 ul li .klevu-out-of-stock-l2{font-size:9px;text-align:left;color:#777}
+.klevuSearchResults-l2 ul li .klevu-vat-caption-l2{font-size:9px;text-align:left;color:#777}.klevuSearchResults-l2 ul li a.klevu-result-box-l2:hover .klevu-name-l2{text-decoration:underline}
+.klevuSearchResults-l2 ul li:hover .klevuSearchResults-l2 ul li div{color:#fff !important}.klevuNoResults{display:none;text-align:center;font-size:13px;padding-top:30px;padding-bottom:30px}
+@font-face{font-family:'WebRupee';src:url('https://js.klevu.com/klevu-css/kuwebrupeefont/WebRupee.V2.0.eot');src:local('WebRupee'),url('https://js.klevu.com/klevu-css/kuwebrupeefont/WebRupee.V2.0.ttf') format('truetype'),url('https://js.klevu.com/klevu-css/kuwebrupeefont/WebRupee.V2.0.woff') format('woff'),url('https://js.klevu.com/klevu-css/kuwebrupeefont/WebRupee.V2.0.svg') format('svg');font-weight:normal;font-style:normal}
+.klevuwebrupee{font-family:'WebRupee'}@font-face{font-family:'FontAwesome';src:url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.eot?v=4.5.0');src:url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('https://js.klevu.com/klevu-css/kuwebiconsfont/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.klevu-ruble{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.klevu-ruble:before{content:"\f158"}.klevuPriceRangeSlider{width:80%;margin:0 auto;margin-top:30px;min-height:50px}
+.klevuPS-target,.klevuPS-target *{-webkit-touch-callout:none;-webkit-user-select:none;-ms-touch-action:none;touch-action:none;-ms-user-select:none;-moz-user-select:none;user-select:none;-moz-box-sizing:border-box;box-sizing:border-box}
+.klevuPS-target{position:relative;direction:ltr}.klevuPS-base{width:100%;height:100%;position:relative;z-index:1}
+.klevuPS-origin{position:absolute;right:0;top:0;left:0;bottom:0}.klevuPS-handle{position:relative;z-index:1}
+.klevuPS-stacking .klevuPS-handle{z-index:10}.klevuPS-state-tap .klevuPS-origin{-webkit-transition:left .3s,top .3s;transition:left .3s,top .3s}
+.klevuPS-base,.klevuPS-handle{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.klevuPS-horizontal{height:4px}
+.klevuPS-horizontal .klevuPS-handle{width:18px;height:18px;left:-9px;top:-7px}.klevuPS-vertical{width:18px}
+.klevuPS-vertical .klevuPS-handle{width:28px;height:34px;left:-6px;top:-17px}.klevuPS-background{background:#c7c8ca}
+.klevuPS-connect{background:#414042;-webkit-transition:background 450ms;transition:background 450ms}
+.klevuPS-origin{border-radius:2px}.klevuPS-target{border-radius:4px}.klevuPS-draggable{cursor:w-resize}
+.klevuPS-vertical .klevuPS-draggable{cursor:n-resize}.klevuPS-handle{border:1px solid #414042;border-radius:50%;background:#fff;cursor:pointer}
+.klevuPS-tooltip{display:block;position:absolute;text-align:center;font-size:13px;margin-left:-9px}.klevuPS-horizontal .klevuPS-handle-lower .klevuPS-tooltip{bottom:-24px}
+.klevuPS-horizontal .klevuPS-handle-upper .klevuPS-tooltip{bottom:-24px}@media only screen and (max-width:1024px){.klevu-fluid .klevu-searching-area-l2{width:40%}
+.klevu-fluid .klevu-pt-rs-hover{width:50% !important}}@media only screen and (min-width:641px) and (max-width:768px){.klevu-fluid .klevu-searching-area-l2{width:50%}
+.klevu-fluid .klevu-pt-rs-hover{width:45% !important}}@media only screen and (max-width:640px){.klevu-fluid .klevu-searching-area-l2{width:60%}
+.klevu-fluid .klevu-pt-rs-hover{width:50% !important}}@media only screen and (max-width:480px){.klevu-fluid .klevu-pt-rs-hover{width:90% !important}
+.klevu-fluid .klevu-searching-area-l2{width:90%}.klevu-fluid .klevuSearchResults-l2 .klevu-img-wrap-l2{width:25% !important;height:50px !important}
+.klevu-fluid .klevuSearchResults-l2 ul li .klevu-name-desc-l2{width:70%}.klevu-fluid .klevuSearchResults-l2 ul li .klevu-desc-l2{display:none}
+.klevu-fluid .klevuSearchResults-l2 ul li .klevu-saleprice-l2{font-weight:normal}}.klevu-banner-ad{clear:both;text-align:center;width:100%;padding:8px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.klevu-banner-ad img{display:inline-block;width:auto;max-width:100%;max-height:100%}.kuBannerAd{text-align:center;width:100%;padding:10px;padding-left:0;padding-right:0;margin-bottom:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.kuBannerAd img{display:inline-block;width:auto;max-width:100%;max-height:100%}

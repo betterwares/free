@@ -1,0 +1,19 @@
+/* 
+This CSS resource incorporates links to font software which is 
+the valuable copyrighted property of WebType LLC, The Font Bureau 
+and/or their suppliers. You may not attempt to copy, install, 
+redistribute, convert, modify or reverse engineer this font 
+software. Please contact WebType with any questions: www.webtype.com
+*/
+
+body:after { content: ''; background-image: url(//pls.webtype.com/v.gif?ct=16623,16623,16623&r=3441&p=2752&h=QVUqNbW7V0PaWwWAQCYnOQ%3d%3d); }
+
+@font-face {
+ font-family: "Garage Gothic";
+ src: url("//cloud.webtype.com/webtype/ff/2/2fda6f77-29ad-4416-aec1-ec7034e40e1f");
+ src:  url("//cloud.webtype.com/webtype/ff/2/2fda6f77-29ad-4416-aec1-ec7034e40e1f#iefix")  format("embedded-opentype"),
+  url("//cloud.webtype.com/webtype/ff/3/56afed50-7551-4675-92c5-9001680ac7be") format("woff"),
+  url("//cloud.webtype.com/webtype/ff/1/57291d43-8f2f-48a9-8768-e0bdc8d1a9f8") format("truetype");
+ font-style: normal;
+ font-weight: bold;
+}
