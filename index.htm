@@ -768,13 +768,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.cr
 <div class="row">
   <div class="wrap">
     <section class="guest-passes-introduction panel">
-      <header class="page-header"><h1 class="gg alpha primary">Your free day pass for st george's leisure centre</h1>
+      <header class="page-header"><h1 class="gg alpha primary"    style="font-weight: bold;font-size: 4em;">Your free day pass for <span class="poolValue"></span></h1>
         <p class="step-counter">
 Step 4 of 5
 </p>
 
         <p class="light-weight no-print">
-          Simply print this page and take the voucher to the St George's Leisure Centre for your free day of leisure. A copy of this day pass has also been emailed to you. Enjoy!
+          Simply print this page and take the voucher to the <span class="poolValue"></span> for your free day of leisure. A copy of this day pass has also been emailed to you. Enjoy!
         </p>
         <p class="hidden print-only">
           Simply present this voucher at your chosen centre to claim your free day of leisure.
@@ -785,16 +785,19 @@ Step 4 of 5
       <article class="guest-pass panel">
         <ul>
           <li class="name">
-            <span class="light-weight up-c title">Arjun Gupta</span>
+            <span class="light-weight up-c title"><span id="nameValue"></span></span>
             <span>Ref: 186646</span>
           </li>
           <li class="venue">
-            <span class="light-weight up-c title">St George's Leisure Centre</span>
-            <span>221 The Highway<br>Tower Hamlets<br>London<br>E1W 3BP</span>
+            <span class="light-weight up-c title"><span class="poolValue"></span></span>
+            <!-- <span>221 The Highway<br>Tower Hamlets<br>London<br>E1W 3BP</span> -->
+            <span id="addressValue"></span>
               <span>Tel: 020 7709 9714</span>
           </li>
-          <li>
-              <span>Your preferred date and time: January 16, 2020 - 19:00</span>
+          
+          <li><div style="display:flex">
+            Your preferred date and time: 	&nbsp;	&nbsp;<span id="dateValue"></span> &nbsp;- &nbsp;<span id="timeValue"></span></span>
+          </div>
             <span>Expiry date: 20/02/2020</span>
           </li>
           <li>
@@ -1034,7 +1037,23 @@ Step 4 of 5
   </div>
 </footer>
 
-    
+
+<div>
+  name<input id="nameThing"/>
+  time<input id="timeThing"/>
+  date<input id="dateThing"/>
+  <select id="poolThing">
+    <option >Select one</option>
+    <option>John Orwell Sports Centre</option>
+    <option>Poplar Baths Leisure Centre and Gym</option>
+    <option>St George's Leisure Centre</option>
+    <option>Tiller Leisure Centre</option>
+    <option>Whitechapel Sports Centre</option>
+    <option>York Hall Leisure Centre</option>
+  </select>
+  <button onclick="submitThings()">Submit</button>
+</div> 
+
     
 <script src="./Better_files/i18n-bf9017d23956e6b138a1c1a3da1b78b01088b642ec8ad70fbbb62307afd7e2ad.js"></script>
 <script src="./Better_files/en-00f9e2fb672f5886f0624d4202a09e8a204b4a76ed0e2612083ec37f3e9894a0.js"></script>
@@ -1054,9 +1073,63 @@ Step 4 of 5
         klevu_result_top_margin = '',
         klevu_result_left_margin = '';
     (function () { var ws = document.createElement('script'),kl_protocol =("https:"===document.location.protocol?"https://":"http://"); ws.type = 'text/javascript'; ws.async = true; ws.src = kl_protocol+'js.klevu.com/klevu-js-v1/js/klevu-webstore.js'; ws.charset="UTF-8"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ws, s); })();
+
+  // // // // // // // // // // // // 
+  // USER THINGS
+  // https://www.better.org.uk/guestpasses/ 
+  // // // // // // // // // // // //
+
+  document.getElementById("dateThing").value = new Date().toJSON().slice(0,10).split('-').reverse().join('/')
+  function submitThings() {
+    console.log(
+    document.getElementById("nameThing").value,
+    document.getElementById("timeThing").value,
+    document.getElementById("dateThing").value,
+    document.getElementById("poolThing").value
+    );
+
+    if (document.getElementById("nameThing").value === "") {
+      document.getElementById("nameValue").innerHTML = "Arjun Gupta"
+    } else {
+      document.getElementById("nameValue").innerHTML = document.getElementById("nameThing").value
+    }
+    document.getElementById("timeValue").innerHTML = document.getElementById("timeThing").value
+    document.getElementById("dateValue").innerHTML = document.getElementById("dateThing").value
+
+    var poolValue = document.getElementById("poolThing").value;
+
+    document.querySelectorAll('.poolValue').forEach(function(element){
+        element.innerHTML = poolValue;
+    });
+
+    var address = "";
+
+    if (poolValue === "John Orwell Sports Centre") {
+      address = "Tench Street<br />Wapping, Tower Hamlets<br />London<br />E1W 2QD"
+    } else if (poolValue === "Poplar Baths Leisure Centre and Gym") {
+      address = "170 East India Dock Road Poplar<br />Tower Hamlets<br />London<br />Tower Hamlets<br />E14 0ED"
+    } else if (poolValue === "St George's Leisure Centre") {
+      address = "221 The Highway<br />Tower Hamlets<br />London<br />E1W 3BP"
+    } else if (poolValue === "Tiller Leisure Centre") {
+      address = "Tiller Road<br />Docklands, Tower Hamlets<br />London<br />E14 8PX"
+    } else if (poolValue === "Whitechapel Sports Centre") {
+      address = "55 Durward Street<br />Whitechapel, Tower Hamlets<br />London<br />E1 5BA"
+    } else if (poolValue === "York Hall Leisure Centre") {
+      address = "5 Old Ford Road<br />Bethnal Green, Tower Hamlets<br />London<br />E2 9PJ"
+    } else {
+      console.error("pool was not recognised got:", poolValue)
+    }
+
+    document.getElementById("addressValue").innerHTML = address
+
+    // document.getElementById("poolValue").innerHTML = d
+    // document.getElementById("timeThing").value,
+    // document.getElementById("dateThing").value,
+    // document.getElementById("poolThing").value
+    // document
+  }
 </script>
 
 
-  
 
-<div class="klevu-fluid"><div class="klevu-searching-area-l2" id="loaderContainer" style="display:none;"><div class="klevuLoader" id="klevuLoader" style="display: none; text-align: center;"><img src="./Better_files/klevu-loader.GIF" alt="Loading..."></div></div><div class="klevu-arrow" id="klevuArrow" style="display:none;"></div><div class="klevu-searching-area-l2" id="klevuSearchingArea" style="display:none;" tabindex="-1"><div class="klevuNoResults klevuNoResults-new" id="klevuSearchNoResults" style="display:none;"></div><div class="klevuSuggestionsBlock" id="klevuSuggestionsBlock"><div class="klevuAutoSuggestion-l2" id="klevuAutoCompleteArea" style="display:none;"></div><div class="klevuAutoSuggestion-l2" id="klevuCmsContentArea" style="display:none;"></div><div class="klevuSuggestionHeading" style="display:none;"><span class="klevuHeadingText">Pages</span></div><div class="klevuAutoSuggestion-l2" id="klevuCategoryArea" style="display:none;"></div></div><div class="klevuResultsBlock" id="klevuResultsBlock"><div class="klevuSuggestionHeading" id="klevuProductHeading" style="display:none;"></div><div class="klevuSearchResults-l2" id="productsList" style="display:none;"></div></div></div><div onkeydown="klevu_commons.setupNextTabForLastChild();" tabindex="0"></div></div><div class="klevu-fluid"><div class="klevu-pt-rs-hover" id="klevu-pt-rs-hover" tabindex="-1" style="display: none;"><div class="klevu-pt-hover-box" id="klevu-pt-hover-box" style="display: block;"><strong>Popular Searches</strong> <div class="klevu-pt-rs-keywords"><a href="https://www.better.org.uk/search?q=swimming%20lessons" target="_self">swimming lessons</a><a href="https://www.better.org.uk/search?q=cancel%20membership" target="_self">cancel membership</a><a href="https://www.better.org.uk/search?q=swimming%20pool%20timetable" target="_self">swimming pool timetable</a><a href="https://www.better.org.uk/search?q=gymnastics" target="_self">gymnastics</a><a href="https://www.better.org.uk/search?q=ice%20skating" target="_self">ice skating</a></div><div class="klevu-clear-both"></div></div></div><div onkeydown="klevu_commons.setupNextTabForLastChild();" tabindex="0"></div></div></body></html>
+<div class="klevu-fluid"><div class="klevu-searching-area-l2" id="loaderContainer" style="display:none;"><div class="klevuLoader" id="klevuLoader" style="display: none; text-align: center;"><img src="./Better_files/klevu-loader.GIF" alt="Loading..."></div></div><div class="klevu-arrow" id="klevuArrow" style="display:none;"></div><div class="klevu-searching-area-l2" id="klevuSearchingArea" style="display:none;" tabindex="-1"><div class="klevuNoResults klevuNoResults-new" id="klevuSearchNoResults" style="display:none;"></div><div class="klevuSuggestionsBlock" id="klevuSuggestionsBlock"><div class="klevuAutoSuggestion-l2" id="klevuAutoCompleteArea" style="display:none;"></div><div class="klevuAutoSuggestion-l2" id="klevuCmsContentArea" style="display:none;"></div><div class="klevuSuggestionHeading" style="display:none;"><span class="klevuHeadingText">Pages</span></div><div class="klevuAutoSuggestion-l2" id="klevuCategoryArea" style="display:none;"></div></div><div class="klevuResultsBlock" id="klevuResultsBlock"><div class="klevuSuggestionHeading" id="klevuProductHeading" style="display:none;"></div><div class="klevuSearchResults-l2" id="productsList" style="display:none;"></div></div></div><div onkeydown="klevu_commons.setupNextTabForLastChild();" tabindex="0"></div></div> </div>><div class="klevu-fluid"><div class="klevu-pt-rs-hover" id="klevu-pt-rs-hover" tabindex="-1" style="display: none;"><div class="klevu-pt-hover-box" id="klevu-pt-hover-box" style="display: block;"><strong>Popular Searches</strong> <div class="klevu-pt-rs-keywords"><a href="https://www.better.org.uk/search?q=swimming%20lessons" target="_self">swimming lessons</a><a href="https://www.better.org.uk/search?q=cancel%20membership" target="_self">cancel membership</a><a href="https://www.better.org.uk/search?q=swimming%20pool%20timetable" target="_self">swimming pool timetable</a><a href="https://www.better.org.uk/search?q=gymnastics" target="_self">gymnastics</a><a href="https://www.better.org.uk/search?q=ice%20skating" target="_self">ice skating</a></div><div class="klevu-clear-both"></div></div></div><div onkeydown="klevu_commons.setupNextTabForLastChild();" tabindex="0"></div></div></body></html>
