@@ -1040,6 +1040,7 @@ Step 4 of 5
 
 
 <div id="hack">
+  <button id="goFS">Go fullscreen</button>
   name<input id="nameThing"/>
   time<input id="timeThing"/>
   date<input id="dateThing"/>
@@ -1131,13 +1132,19 @@ Step 4 of 5
     document.getElementById("addressValue").innerHTML = address
 
     document.getElementById("hack").style.display = "none";
-    document.body.requestFullscreen();
+    
     // document.getElementById("poolValue").innerHTML = d
     // document.getElementById("timeThing").value,
     // document.getElementById("dateThing").value,
     // document.getElementById("poolThing").value
     // document
   }
+  
+  
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
 </script>
 
 
